@@ -4,7 +4,7 @@ import time
 from threading import Thread,current_thread
 
 def menu():
-    print '\n## Created by Fr3shnuts'
+    print '\n## Created by Freshnuts'
     time.sleep(1)
     print """
 ###############################################################################

@@ -45,7 +45,7 @@ while 1:
                 print "Loop Count per Thread : %s" % a
 		print current_thread()
 	        time.sleep(1)
-# Threading: sends 10 ICMP packets per 1 while loop, totals 100 by end of while loop
+# Threading: sends 10 ICMP packets per 1 while loop, totals 100 by the end of 10 while loops
         for i in range(10):
             t = Thread(target=blacknurse, args=(i,))
             t.start()

